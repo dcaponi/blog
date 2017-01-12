@@ -1,0 +1,14 @@
+<h3 class="text-center">All Articles</h3>
+<% @articles.each do |article| %>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title"><%= link_to article.title, article_path(article) %></h3>
+      <%= link_to "Delete", article_path(article), method: :delete, class: "btn btn-xs btn-danger actibutton", data: { confirm: "Are you sure you want to delete this article?" } %>
+      <%= link_to "Edit", edit_article_path(article), class: "btn btn-xs btn-info actibutton" %>
+      <%= link_to "View", article_path(article), class: "btn btn-xs btn-success actibutton" %>
+    </div>
+    <div class="panel-body">
+      <%= truncate( article.body, length: 500 ) %>
+    </div>
+  </div>
+<% end %>
