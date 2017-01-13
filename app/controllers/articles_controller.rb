@@ -43,6 +43,13 @@ class ArticlesController < ApplicationController
   def edit
   end
 
+  protected;
+  def resource_not_found
+    message = "This is not the article you are looking for"
+    flash[:alert] = message
+    redirect_to root_path
+  end
+
   private;
   def article_params
     params.require(:article).permit(:title, :body)
