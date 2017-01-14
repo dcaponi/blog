@@ -1,7 +1,8 @@
 class ArticlesController < ApplicationController
+  before_action :set_article, only: [ :update, :show, :edit, :destroy ]
   before_action :authenticate_user, except: [ :index, :show ]
   before_action :same_user, only: [ :update, :destroy ]
-  before_action :set_article, only: [ :update, :show, :edit, :destroy ]
+
 
   def index
     @articles = Article.all
@@ -35,6 +36,8 @@ class ArticlesController < ApplicationController
   end
 
   def show
+    @comments = @article.comments
+    @comment = @article.comments.build
   end
 
   def destroy
