@@ -1,4 +1,6 @@
 class ArticlesController < ApplicationController
+  before_action :authenticate_user, except: [ :index, :show ]
+  before_action :same_user, only: [ :update, :destroy ]
   before_action :set_article, only: [ :update, :show, :edit, :destroy ]
 
   def index
@@ -11,6 +13,7 @@ class ArticlesController < ApplicationController
 
   def create
     @article = Article.new(article_params)
+    @article.user = current_user
     if @article.save
       flash[:success] = "Article has been created"
       redirect_to articles_path
@@ -59,4 +62,13 @@ class ArticlesController < ApplicationController
   def set_article
     @article = Article.find(params[:id])
   end
+
+  private;
+  def same_user
+    if @article.user != current_user
+      flash[:danger] = "You cannot change other writers' articles"
+      redirect_to root_path
+    end
+  end
+
 end
