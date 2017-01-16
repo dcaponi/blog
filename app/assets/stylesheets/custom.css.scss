@@ -3,24 +3,24 @@
 
 body {
   background: #e1e1e1;
-  color: #64103F;
+  color: #55585D;
 }
 
 // Navbar styling
 .navbar {
- background: #64103F;
- padding-bottom: 20px;
+ background: #55585D;
+ padding-bottom: 10px;
 }
 
 .navbar-default .navbar-brand {
-  padding-top: 25px;
-  font-size: 150%;
+  padding-top: 15px;
+  font-size: 170%;
   font-weight: bold;
   color: #ffffff;
 }
 
 .navbar-default .navbar-brand:hover {
-  color: #ff0000;
+  color: #6ED3CF;
 }
 
 .navbar-default {
@@ -28,18 +28,18 @@ body {
 }
 
 .navbar-nav {
-  padding-top: 10px;
+  padding-top: 0px;
   padding-right: 20px;
 }
 
 .navbar-default .navbar-nav li > a {
   font-weight: bold;
-  font-size: 130%;
+  font-size: 110%;
   color: #ffffff;
 }
 
 .navbar-default .navbar-nav li > a:hover {
-  color: #ff0000;
+  color: #6ED3CF;
 }
 
 // Form styling
@@ -47,12 +47,30 @@ body {
   color: #64103F;
 }
 
-.actibutton{
+.actibutton {
   float: right;
   margin-left: 5px;
   margin-right: 5px;
 }
 
+.btn-center {
+  text-align: center;
+}
+
 .panel-title{
   display: inline-block;
+}
+
+.panel-heading {
+  background-color: #42AB9E !important;
+}
+
+.btn-primary {
+  background-color: #42AB9E;
+  border-color: #42AB9E;
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+  background-color: #5CBA93;
+  border-color: #5CBA93;
 }
