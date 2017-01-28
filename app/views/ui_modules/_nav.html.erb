@@ -17,7 +17,7 @@
         <ul class="nav navbar-nav">
           <li><%= link_to "About", about_path %></li>
           <li><%= link_to "View Articles", articles_path %></li>
-          <% if user_signed_in? %>
+          <% if user_signed_in? && admin? %>
             <li><%= link_to "New Article", new_article_path %></li>
           <% end %>
         </ul>

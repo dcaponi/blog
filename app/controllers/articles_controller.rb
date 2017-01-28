@@ -9,6 +9,9 @@ class ArticlesController < ApplicationController
   end
 
   def new
+    if !admin?
+      redirect_to articles_path
+    end
     @article = Article.new
   end
 
@@ -21,6 +24,12 @@ class ArticlesController < ApplicationController
     else
       flash.now[:danger] = "Article has not been created!"
       render "new"
+    end
+  end
+
+  def edit
+    if !admin?
+      redirect_to articles_path
     end
   end
 
@@ -41,12 +50,11 @@ class ArticlesController < ApplicationController
   end
 
   def destroy
-    @article.destroy
-    flash[ :notice ] = "Article #{@article.title} Deleted!"
-    redirect_to articles_path
-  end
-
-  def edit
+    if admin?
+      @article.destroy
+      flash[ :notice ] = "Article #{@article.title} Deleted!"
+    end
+      redirect_to articles_path
   end
 
   protected;

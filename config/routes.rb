@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount Ckeditor::Engine => '/ckeditor'
   devise_for :users
   resources :articles do
     resources :comments #add nested routes e.g. articles/:id/comments/:id
