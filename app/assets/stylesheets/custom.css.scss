@@ -74,3 +74,40 @@ body {
   background-color: #5CBA93;
   border-color: #5CBA93;
 }
+
+.jumbotron {
+  background-image: url(code.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -25px;
+  height: 400px;
+  padding: 40px;
+  color: white;
+
+  .shade {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 10px 10px 30px;
+  }
+
+  .btn-signup {
+    background-color: #55585D;
+    border-color: #55585D;
+    color: #fff;
+    margin-right: 20px;
+    margin-top: 30px;
+    a {
+      color: #fff;
+    }
+  }
+
+  .btn-signup:hover, .btn-primary:active, .btn-primary:focus {
+    background-color: #6ED3CF;
+    border-color: #6ED3CF;
+    color: #55585D !important;
+    a {
+      color: #55585D;
+      text-decoration: none;
+    }
+  }
+}
