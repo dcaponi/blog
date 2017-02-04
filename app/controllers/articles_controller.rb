@@ -19,7 +19,6 @@ class ArticlesController < ApplicationController
     @article = Article.new(article_params)
     @article.user = current_user
     if @article.save
-      flash[:success] = "Article has been created"
       redirect_to articles_path
     else
       flash.now[:danger] = "Article has not been created!"
@@ -35,7 +34,6 @@ class ArticlesController < ApplicationController
 
   def update
     if @article.update(article_params)
-      flash[:success] = "Article has been updated"
       redirect_to articles_path
     else
       flash.now[:danger] = "Article has not been updated!"
@@ -52,7 +50,6 @@ class ArticlesController < ApplicationController
   def destroy
     if admin?
       @article.destroy
-      flash[ :notice ] = "Article #{@article.title} Deleted!"
     end
       redirect_to articles_path
   end
