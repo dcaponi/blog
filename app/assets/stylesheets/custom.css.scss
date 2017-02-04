@@ -1,5 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
 body {
   background: #e1e1e1;
@@ -73,4 +75,121 @@ body {
 .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
   background-color: #5CBA93;
   border-color: #5CBA93;
+}
+
+.jumbotron {
+  background-image: url(coast.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -25px;
+  margin-bottom: -5px;
+  height: 400px;
+  padding: 40px;
+  color: white;
+
+  .shade {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 10px 10px 30px;
+  }
+
+  .btn-signup {
+    background-color: #55585D;
+    border-color: #55585D;
+    color: #fff;
+    margin-right: 20px;
+    margin-top: 30px;
+    a {
+      color: #fff;
+    }
+  }
+
+  .btn-signup:hover, .btn-primary:active, .btn-primary:focus {
+    background-color: #6ED3CF;
+    border-color: #6ED3CF;
+    color: #55585D !important;
+    a {
+      color: #55585D;
+      text-decoration: none;
+    }
+  }
+}
+
+.hero {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: -20px;
+  margin-bottom: -25px;
+  height: 400px;
+  text-align: center;
+}
+
+.about-hero {
+  background-image: url(rise.jpg);
+}
+
+.app-hero {
+  background-image: url(code.jpg);
+}
+
+.pic-hero {
+  background-image: url(seattle.jpg);
+}
+
+.face {
+  height: 150px;
+  width: 150px;
+  border-radius: 300px;
+  position: relative;
+  top: 325px;
+}
+
+.section-title {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 20px 10px 20px;
+  color: #fff;
+  position: absolute;
+  left: 15px;
+  top: 30px;
+  font-size: 50px;
+}
+
+.intro{
+  margin-top: 50px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  background-color: #fff;
+  .app-img{
+    width: 100px;
+  }
+  margin: 10px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+footer {
+  background-color: #fff;
+  bottom: 0px;
+  margin-top: 20px;
+
+  .fa {
+    font-size: 50px;
+    text-align: center;
+  }
+  .col-xs-3 {
+    text-align: center;
+  }
+  a {
+    text-decoration: none !important;
+  }
 }

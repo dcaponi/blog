@@ -19,7 +19,7 @@
           <%= f.label :body %>
         </div>
         <div class="col-sm-11">
-          <%= f.text_area :body, rows: 10, class: 'form-control', placeholder: "Article Content" %>
+          <%= f.cktext_area :body, input_html: {:ckeditor => {:toolbar => 'FULL'}}, class: 'form-control', placeholder: "Article Content" %>
         </div>
       </div>
       <div class="form-group">

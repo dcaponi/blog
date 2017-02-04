@@ -2,15 +2,25 @@ source 'https://rubygems.org'
 ruby '2.3.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.1'
+<<<<<<< HEAD
 
+=======
+# Use sqlite3 as the database for Active Record
+gem 'sqlite3'
+# Use dotenv for managing environment variables
+gem 'dotenv-rails'
+>>>>>>> release/styles_release
 # Use devise for user management
 gem 'devise', '~> 4.2.0'
+# Use ckEditor for post form
+gem 'ckeditor', '~> 4.1'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'autoprefixer-rails', '~> 6.3.7'
+gem 'font-awesome-sass'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
