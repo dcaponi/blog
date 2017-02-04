@@ -9,14 +9,18 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <%= link_to "", root_path, class: "navbar-brand" %>
+        <%= link_to "Clever Coder", root_path, class: "navbar-brand" %>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
           <li><%= link_to "About", about_path %></li>
-          <li><%= link_to "View Articles", articles_path %></li>
+          <!-- <li><%= link_to "Apps", apps_path %></li> -->
+          <li><%= link_to "Original Site", "http://www.dominick-caponi.com" %></li>
+          <li><%= link_to "Blog", articles_path %></li>
+          <!-- <li><%= link_to "Photography", photos_path %></li> -->
+
           <% if user_signed_in? && admin? %>
             <li><%= link_to "New Article", new_article_path %></li>
           <% end %>

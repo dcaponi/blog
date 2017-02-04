@@ -1,10 +1,15 @@
 class IndexController < ApplicationController
   def home
-    if logged_in?
-      redirect_to articles_path
-    end
+    @articles = Article.order(created_at: :desc).limit(5)
   end
 
   def about
   end
+
+  def apps
+  end
+
+  def photos
+  end
+
 end
