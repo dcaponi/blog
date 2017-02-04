@@ -18,7 +18,6 @@
           <%= link_to "View", article_path(article), class: "btn btn-xs btn-success actibutton" %>
 
         <% end %>
-        <%= admin? %>
       </div>
       <div class="panel-body">
         <%= raw (article.body).truncate(500)  %>
