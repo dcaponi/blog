@@ -3,8 +3,6 @@ ruby '2.3.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.1'
 
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
 # Use dotenv for managing environment variables
 gem 'dotenv-rails'
 # Use devise for user management
@@ -57,6 +55,8 @@ group :development do
   gem 'guard', '~> 2.14.0'
   gem 'guard-rspec', '~> 4.7.2'
   gem 'guard-cucumber', '~> 2.1.2'
+  # Use sqlite3 as the database for Active Record
+  gem 'sqlite3'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
