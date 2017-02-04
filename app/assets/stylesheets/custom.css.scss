@@ -1,5 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
 body {
   background: #e1e1e1;
@@ -81,6 +83,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: -25px;
+  margin-bottom: -5px;
   height: 400px;
   padding: 40px;
   color: white;
@@ -117,6 +120,7 @@ body {
   background-position: center;
   background-size: cover;
   margin-top: -20px;
+  margin-bottom: -25px;
   height: 400px;
   text-align: center;
 }
@@ -129,12 +133,16 @@ body {
   background-image: url(code.jpg);
 }
 
+.pic-hero {
+  background-image: url(seattle.jpg);
+}
+
 .face {
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   border-radius: 300px;
   position: relative;
-  top: 300px;
+  top: 325px;
 }
 
 .section-title {
@@ -148,7 +156,7 @@ body {
 }
 
 .intro{
-  margin-top: 110px;
+  margin-top: 50px;
 }
 
 .card {
@@ -171,8 +179,17 @@ body {
 
 footer {
   background-color: #fff;
-  position: relative;
   bottom: 0px;
   margin-top: 20px;
-  height: 100px;
+
+  .fa {
+    font-size: 50px;
+    text-align: center;
+  }
+  .col-xs-3 {
+    text-align: center;
+  }
+  a {
+    text-decoration: none !important;
+  }
 }

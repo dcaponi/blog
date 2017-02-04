@@ -16,9 +16,10 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
           <li><%= link_to "About", about_path %></li>
-          <li><%= link_to "Apps", apps_path %></li>
+          <!-- <li><%= link_to "Apps", apps_path %></li> -->
+          <li><%= link_to "Original Site", "http://www.dominick-caponi.com" %></li>
           <li><%= link_to "Blog", articles_path %></li>
-          <li><%= link_to "Photography", photos_path %></li>
+          <!-- <li><%= link_to "Photography", photos_path %></li> -->
 
           <% if user_signed_in? && admin? %>
             <li><%= link_to "New Article", new_article_path %></li>

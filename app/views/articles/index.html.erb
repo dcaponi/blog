@@ -1,5 +1,12 @@
+<div class="row pic-hero hero">
+  <span class="section-title">
+    Adventure Stories
+  </span>
+
+</div>
 <div class="container">
-  <h3 class="text-center">All Articles</h3>
+  <br />
+  <h2 align="center">Blog Entries</h2><br />
   <% @articles.each do |article| %>
     <div class="panel panel-default">
       <div class="panel-heading">
@@ -19,3 +26,4 @@
     </div>
   <% end %>
 </div>
+<%= render 'ui_modules/footer' %>
