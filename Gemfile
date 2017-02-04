@@ -2,14 +2,11 @@ source 'https://rubygems.org'
 ruby '2.3.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.1'
-<<<<<<< HEAD
 
-=======
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use dotenv for managing environment variables
 gem 'dotenv-rails'
->>>>>>> release/styles_release
 # Use devise for user management
 gem 'devise', '~> 4.2.0'
 # Use ckEditor for post form
