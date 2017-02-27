@@ -155,6 +155,14 @@ body {
   font-size: 50px;
 }
 
+.article-body {
+  background-color: #f5f8f9;
+  padding: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 20px
+}
+
 .intro{
   margin-top: 50px;
 }
@@ -177,6 +185,10 @@ body {
   padding: 2px 16px;
 }
 
+.index-container {
+  margin-top: 30px;
+}
+
 footer {
   background-color: #fff;
   bottom: 0px;
@@ -192,4 +204,22 @@ footer {
   a {
     text-decoration: none !important;
   }
+}
+
+.panel-heading {
+  color: #333333;
+  &:hover {
+    color: #333333;
+  }
+}
+
+.panel-body {
+  color: #55585D;
+  &:hover {
+    color: #55585D;
+  }
+}
+
+.panel-title {
+  font-size: 30px;
 }

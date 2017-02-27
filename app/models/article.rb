@@ -8,6 +8,11 @@ class Article < ApplicationRecord
     order(created_at: :asc)
   end
 
+  def self.next(current_id)
+    debugger
+    self.find.where("id > ?", current_id)
+  end
+
   def recent(n)
     in_order.endmost(n)
   end
