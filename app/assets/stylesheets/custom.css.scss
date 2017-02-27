@@ -8,6 +8,11 @@ body {
   color: #55585D;
 }
 
+.clearfix {
+  content: "";
+  display: block;
+}
+
 // Navbar styling
 .navbar {
  background: #55585D;

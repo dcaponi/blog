@@ -1,10 +1,20 @@
 <div class="container">
-  <% if @last %>
-    <%= link_to "Last", article_path(@last) %>
-  <% end %>
-  <% if @next %>
-    <%= link_to "Next", article_path(@next) %>
-  <% end %>
+  <div style="float:left">
+    <% if @article.previous( 'last' ) %>
+        <%= link_to "Previous: " + @article.previous( 'last' ).title, article_path(@article.previous( 'last' )) %>
+    <% else %>
+        <%= link_to "Jump to Newest: " + @article.next( 'last' ).title, article_path(@article.next( 'last' )) %>
+    <% end %>
+  </div>
+  <div style="float:right">
+    <% if @article.next( 'first' ) %>
+        <%= link_to "Up Next: " + @article.next( 'first' ).title, article_path(@article.next( 'first' )) %>
+    <% else %>
+        <%= link_to "See First Article: " + @article.previous( 'first' ).title, article_path( @article.previous( 'first' ) ) %>
+    <% end %>
+  </div>
+  
+  <div class="clearfix"></div><br />
   <div class="article-body">
     <h1 class="text-center"><%= @article.title %></h1>
     <h4 class="text-center">By: <%= @article.user.email %> | <%= @article.created_at.strftime("%B %e, %Y") %></h4><br />
