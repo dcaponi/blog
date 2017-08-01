@@ -4,6 +4,11 @@ ruby '2.3.3'
 gem 'rails', '~> 5.0.1'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
+# Use Elasticsearch for storage
+gem 'elasticsearch-model'
+gem 'elasticsearch-rails'
+gem 'elasticsearch-persistence', require: 'elasticsearch/persistence/model'
+
 # Use dotenv for managing environment variables
 gem 'dotenv-rails'
 # Use devise for user management

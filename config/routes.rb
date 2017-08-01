@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get '/about', to: 'index#about'
   get '/apps', to: 'index#apps'
   get '/photos', to: 'index#photos'
+  get 'search', to: 'search#search'
   root to: "index#home"
   mount ActionCable.server => '/cable'
 end
