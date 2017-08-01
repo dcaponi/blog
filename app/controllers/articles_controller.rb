@@ -69,6 +69,7 @@ class ArticlesController < ApplicationController
   private;
   def set_article
     @article = Article.find(params[:id])
+    @article.get_neighbors()
   end
 
   private;
