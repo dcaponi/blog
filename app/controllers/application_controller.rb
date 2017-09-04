@@ -12,7 +12,7 @@ class ApplicationController < ActionController::Base
   end
 
   def admin?
-    current_user.email == Rails.application.config.admin
+    current_user.email == Rails.application.config.admin unless !current_user
   end
 
   def authenticate_user
