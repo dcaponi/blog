@@ -83,7 +83,7 @@ body {
 }
 
 .jumbotron {
-  background-image: image-url(coast.jpg);
+  background-image: image-url('coast.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -131,15 +131,15 @@ body {
 }
 
 .about-hero {
-  background-image: image-url(rise.jpg);
+  background-image: image-url('rise.jpg');
 }
 
 .app-hero {
-  background-image: image-url(code.jpg);
+  background-image: image-url('code.jpg');
 }
 
 .pic-hero {
-  background-image: image-url(seattle.jpg);
+  background-image: image-url('seattle.jpg');
 }
 
 .face {
